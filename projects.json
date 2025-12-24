@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "vercel-project-index",
-      "title": "Project Index",
+      "title": "Vercel Project Index",
       "purpose": "Dashboard tracking all Vercel-deployed projects",
       "category": "internal",
       "created": "2025-12-23",
