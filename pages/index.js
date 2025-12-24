@@ -2,27 +2,34 @@ import { useState } from 'react';
 import Head from 'next/head';
 import ProjectCard from '../components/ProjectCard';
 import FilterBar from '../components/FilterBar';
-import projectsData from '../projects.json';
 
-export default function Home() {
+export default function Home({ projectsData }) {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
+  const [projects, setProjects] = useState(projectsData.projects);
 
-  const filteredProjects = projectsData.projects.filter((project) => {
+  const filteredProjects = projects.filter((project) => {
     const matchesCategory = !selectedCategory || project.category === selectedCategory;
     const matchesSearch = !searchTerm ||
       project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       project.purpose.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (project.title && project.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
       project.tags?.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
     return matchesCategory && matchesSearch;
   });
 
   const stats = {
-    total: projectsData.projects.length,
+    total: projects.length,
     byCategory: projectsData.categories.reduce((acc, cat) => {
-      acc[cat] = projectsData.projects.filter(p => p.category === cat).length;
+      acc[cat] = projects.filter(p => p.category === cat).length;
       return acc;
     }, {}),
+  };
+
+  const handleTitleUpdate = (name, newTitle) => {
+    setProjects(prev => prev.map(p =>
+      p.name === name ? { ...p, title: newTitle } : p
+    ));
   };
 
   return (
@@ -71,7 +78,11 @@ export default function Home() {
           {filteredProjects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProjects.map((project) => (
-                <ProjectCard key={project.name} project={project} />
+                <ProjectCard
+                  key={project.name}
+                  project={project}
+                  onTitleUpdate={handleTitleUpdate}
+                />
               ))}
             </div>
           ) : (
@@ -89,4 +100,44 @@ export default function Home() {
       </div>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const OWNER = 'vickaul-ai';
+  const REPO = 'vercel-project-index';
+  const PATH = 'projects.json';
+
+  try {
+    const response = await fetch(
+      `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`,
+      {
+        headers: {
+          Accept: 'application/vnd.github.v3+json',
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch projects');
+    }
+
+    const fileData = await response.json();
+    const content = Buffer.from(fileData.content, 'base64').toString('utf8');
+    const projectsData = JSON.parse(content);
+
+    return {
+      props: {
+        projectsData,
+      },
+    };
+  } catch (error) {
+    console.error('Error fetching projects:', error);
+    // Fallback to local file if GitHub fetch fails
+    const projectsData = require('../projects.json');
+    return {
+      props: {
+        projectsData,
+      },
+    };
+  }
 }
