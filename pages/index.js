@@ -105,15 +105,17 @@ export default function Home({ projectsData }) {
 export async function getStaticProps() {
   const OWNER = 'vickaul-ai';
   const REPO = 'vercel-project-index';
-  const PATH = 'projects.json';
+  const BRANCH = 'main';
 
   try {
-    // Fetch from GitHub to get the latest data
+    // Use raw.githubusercontent.com with cache-busting timestamp
+    const timestamp = Date.now();
     const response = await fetch(
-      `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`,
+      `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/projects.json?t=${timestamp}`,
       {
         headers: {
-          Accept: 'application/vnd.github.v3+json',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache',
         },
       }
     );
@@ -122,24 +124,24 @@ export async function getStaticProps() {
       throw new Error('Failed to fetch projects');
     }
 
-    const fileData = await response.json();
-    const content = Buffer.from(fileData.content, 'base64').toString('utf8');
-    const projectsData = JSON.parse(content);
+    const projectsData = await response.json();
 
     return {
       props: {
         projectsData,
       },
-      // No automatic revalidation - we'll use on-demand revalidation
+      // Required for on-demand revalidation to work
+      revalidate: 60, // Also revalidate every 60s as fallback
     };
   } catch (error) {
     console.error('Error fetching projects:', error);
-    // Fallback to local file if GitHub fetch fails
+    // Fallback to local file if fetch fails
     const projectsData = require('../projects.json');
     return {
       props: {
         projectsData,
       },
+      revalidate: 60,
     };
   }
 }
