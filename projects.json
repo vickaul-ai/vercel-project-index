@@ -64,15 +64,6 @@
       "tags": ["education", "ap-statistics", "arjun", "study-tool"]
     },
     {
-      "name": "v0-ap-biology-heredity-practice",
-      "purpose": "AP Biology heredity practice questions",
-      "category": "client",
-      "created": "2025-12-12",
-      "lastUpdated": "2025-12-12",
-      "url": "https://v0-ap-biology-heredity-practice.vercel.app",
-      "tags": ["education", "ap-biology", "arjun", "study-tool"]
-    },
-    {
       "name": "v0-prospect-scoring-application",
       "purpose": "Lead/prospect scoring application",
       "category": "internal",
