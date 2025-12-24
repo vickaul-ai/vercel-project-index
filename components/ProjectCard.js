@@ -9,6 +9,7 @@ const categoryColors = {
 
 export default function ProjectCard({ project }) {
   const [copied, setCopied] = useState(false);
+  const [deleteCopied, setDeleteCopied] = useState(false);
 
   const daysSinceUpdate = Math.floor(
     (new Date() - new Date(project.lastUpdated)) / (1000 * 60 * 60 * 24)
@@ -18,6 +19,12 @@ export default function ProjectCard({ project }) {
     navigator.clipboard.writeText(project.url);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const copyDeleteCommand = () => {
+    navigator.clipboard.writeText(`delete project ${project.name}`);
+    setDeleteCopied(true);
+    setTimeout(() => setDeleteCopied(false), 2000);
   };
 
   return (
@@ -65,6 +72,13 @@ export default function ProjectCard({ project }) {
           className="px-3 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors text-sm"
         >
           {copied ? 'Copied!' : 'Copy URL'}
+        </button>
+        <button
+          onClick={copyDeleteCommand}
+          className="px-3 py-2 border border-red-200 text-red-600 rounded hover:bg-red-50 transition-colors text-sm"
+          title="Copy delete command for Claude"
+        >
+          {deleteCopied ? 'Copied!' : 'Delete'}
         </button>
       </div>
     </div>
