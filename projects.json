@@ -2,6 +2,7 @@
   "projects": [
     {
       "name": "vercel-project-index",
+      "title": "Project Index",
       "purpose": "Dashboard tracking all Vercel-deployed projects",
       "category": "internal",
       "created": "2025-12-23",
@@ -11,6 +12,7 @@
     },
     {
       "name": "silence-chainlink-research",
+      "title": "Chainlink Partnership Research",
       "purpose": "Partnership research: Silence Labs x Chainlink ACE",
       "category": "research",
       "created": "2025-12-23",
@@ -20,6 +22,7 @@
     },
     {
       "name": "arjun-feedback",
+      "title": null,
       "purpose": "Feedback collection tool",
       "category": "client",
       "created": "2025-12-23",
@@ -29,6 +32,7 @@
     },
     {
       "name": "docs",
+      "title": "Documentation",
       "purpose": "Documentation site",
       "category": "internal",
       "created": "2025-12-20",
@@ -38,6 +42,7 @@
     },
     {
       "name": "silent-orchestration",
+      "title": null,
       "purpose": "Silence Labs orchestration project",
       "category": "research",
       "created": "2025-12-18",
@@ -47,6 +52,7 @@
     },
     {
       "name": "v0-prospect-scoring-application",
+      "title": "Prospect Scoring",
       "purpose": "Lead/prospect scoring application",
       "category": "internal",
       "created": "2025-12-12",
@@ -56,6 +62,7 @@
     },
     {
       "name": "v0-open-ai-you-tube-organizer",
+      "title": "YouTube Organizer",
       "purpose": "YouTube content organizer using OpenAI",
       "category": "experiment",
       "created": "2025-12-08",
@@ -65,6 +72,7 @@
     },
     {
       "name": "v0-html-layout-adjustments",
+      "title": null,
       "purpose": "HTML layout adjustment experiments",
       "category": "experiment",
       "created": "2025-12-07",
@@ -74,6 +82,7 @@
     },
     {
       "name": "v0-job-search-portal",
+      "title": "Job Search Portal",
       "purpose": "Job search portal prototype",
       "category": "experiment",
       "created": "2025-09-17",
@@ -83,6 +92,7 @@
     },
     {
       "name": "v0-speech-to-text-app",
+      "title": "Speech to Text",
       "purpose": "Speech to text application",
       "category": "experiment",
       "created": "2025-09-16",
