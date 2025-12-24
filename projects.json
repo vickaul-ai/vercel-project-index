@@ -8,7 +8,11 @@
       "created": "2025-12-23",
       "lastUpdated": "2025-12-23",
       "url": "https://vercel-project-index.vercel.app",
-      "tags": ["dashboard", "meta", "index"]
+      "tags": [
+        "dashboard",
+        "meta",
+        "index"
+      ]
     },
     {
       "name": "silence-chainlink-research",
@@ -18,17 +22,25 @@
       "created": "2025-12-23",
       "lastUpdated": "2025-12-23",
       "url": "https://silence-chainlink-research.vercel.app",
-      "tags": ["chainlink", "mpc", "silence-labs", "web3"]
+      "tags": [
+        "chainlink",
+        "mpc",
+        "silence-labs",
+        "web3"
+      ]
     },
     {
       "name": "arjun-feedback",
-      "title": null,
+      "title": "Arjun's Music App",
       "purpose": "Feedback collection tool",
       "category": "client",
       "created": "2025-12-23",
       "lastUpdated": "2025-12-23",
       "url": "https://arjun-feedback.vercel.app",
-      "tags": ["feedback", "arjun"]
+      "tags": [
+        "feedback",
+        "arjun"
+      ]
     },
     {
       "name": "docs",
@@ -38,7 +50,9 @@
       "created": "2025-12-20",
       "lastUpdated": "2025-12-20",
       "url": "https://docs-rosy-iota.vercel.app",
-      "tags": ["documentation"]
+      "tags": [
+        "documentation"
+      ]
     },
     {
       "name": "silent-orchestration",
@@ -48,7 +62,10 @@
       "created": "2025-12-18",
       "lastUpdated": "2025-12-18",
       "url": "https://silent-orchestration.vercel.app",
-      "tags": ["silence-labs", "orchestration"]
+      "tags": [
+        "silence-labs",
+        "orchestration"
+      ]
     },
     {
       "name": "v0-prospect-scoring-application",
@@ -58,7 +75,11 @@
       "created": "2025-12-12",
       "lastUpdated": "2025-12-12",
       "url": "https://v0-prospect-scoring-application.vercel.app",
-      "tags": ["sales", "scoring", "leads"]
+      "tags": [
+        "sales",
+        "scoring",
+        "leads"
+      ]
     },
     {
       "name": "v0-open-ai-you-tube-organizer",
@@ -68,7 +89,11 @@
       "created": "2025-12-08",
       "lastUpdated": "2025-12-08",
       "url": null,
-      "tags": ["openai", "youtube", "prototype"]
+      "tags": [
+        "openai",
+        "youtube",
+        "prototype"
+      ]
     },
     {
       "name": "v0-html-layout-adjustments",
@@ -78,7 +103,11 @@
       "created": "2025-12-07",
       "lastUpdated": "2025-12-07",
       "url": null,
-      "tags": ["html", "layout", "prototype"]
+      "tags": [
+        "html",
+        "layout",
+        "prototype"
+      ]
     },
     {
       "name": "v0-job-search-portal",
@@ -88,7 +117,11 @@
       "created": "2025-09-17",
       "lastUpdated": "2025-09-17",
       "url": null,
-      "tags": ["jobs", "portal", "prototype"]
+      "tags": [
+        "jobs",
+        "portal",
+        "prototype"
+      ]
     },
     {
       "name": "v0-speech-to-text-app",
@@ -98,8 +131,17 @@
       "created": "2025-09-16",
       "lastUpdated": "2025-09-16",
       "url": null,
-      "tags": ["speech", "transcription", "prototype"]
+      "tags": [
+        "speech",
+        "transcription",
+        "prototype"
+      ]
     }
   ],
-  "categories": ["research", "client", "internal", "experiment"]
+  "categories": [
+    "research",
+    "client",
+    "internal",
+    "experiment"
+  ]
 }
