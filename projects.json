@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "name": "silence-chainlink-research",
+      "purpose": "Partnership research: Silence Labs x Chainlink ACE",
+      "category": "research",
+      "created": "2025-12-23",
+      "lastUpdated": "2025-12-23",
+      "url": "https://silence-chainlink-research.vercel.app",
+      "tags": ["chainlink", "mpc", "silence-labs", "web3"]
+    }
+  ],
+  "categories": ["research", "client", "internal", "experiment"]
+}
