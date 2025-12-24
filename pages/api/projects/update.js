@@ -10,6 +10,7 @@ export default async function handler(req, res) {
   }
 
   const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+  const REVALIDATE_SECRET = process.env.REVALIDATE_SECRET;
   const OWNER = 'vickaul-ai';
   const REPO = 'vercel-project-index';
   const PATH = 'projects.json';
@@ -69,6 +70,20 @@ export default async function handler(req, res) {
     if (!updateResponse.ok) {
       const errorData = await updateResponse.json();
       throw new Error(errorData.message || 'Failed to update file');
+    }
+
+    // Trigger on-demand revalidation
+    if (REVALIDATE_SECRET) {
+      const protocol = req.headers['x-forwarded-proto'] || 'https';
+      const host = req.headers.host;
+      const revalidateUrl = `${protocol}://${host}/api/revalidate?secret=${REVALIDATE_SECRET}`;
+
+      try {
+        await fetch(revalidateUrl);
+      } catch (revalidateError) {
+        console.error('Revalidation failed:', revalidateError);
+        // Don't fail the request if revalidation fails
+      }
     }
 
     res.status(200).json({ success: true, title: title || null });

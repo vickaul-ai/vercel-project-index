@@ -102,12 +102,13 @@ export default function Home({ projectsData }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const OWNER = 'vickaul-ai';
   const REPO = 'vercel-project-index';
   const PATH = 'projects.json';
 
   try {
+    // Fetch from GitHub to get the latest data
     const response = await fetch(
       `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`,
       {
@@ -129,6 +130,7 @@ export async function getServerSideProps() {
       props: {
         projectsData,
       },
+      // No automatic revalidation - we'll use on-demand revalidation
     };
   } catch (error) {
     console.error('Error fetching projects:', error);
