@@ -28,15 +28,6 @@
       "tags": ["feedback", "arjun"]
     },
     {
-      "name": "vercel-jsx-test",
-      "purpose": "JSX rendering test project",
-      "category": "experiment",
-      "created": "2025-12-23",
-      "lastUpdated": "2025-12-23",
-      "url": "https://vercel-jsx-test.vercel.app",
-      "tags": ["test", "jsx"]
-    },
-    {
       "name": "docs",
       "purpose": "Documentation site",
       "category": "internal",
