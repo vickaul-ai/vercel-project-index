@@ -56,7 +56,7 @@
     },
     {
       "name": "silent-orchestration",
-      "title": null,
+      "title": "Silence Orchestration",
       "purpose": "Silence Labs orchestration project",
       "category": "research",
       "created": "2025-12-18",
