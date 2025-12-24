@@ -17,6 +17,114 @@
       "lastUpdated": "2025-12-23",
       "url": "https://silence-chainlink-research.vercel.app",
       "tags": ["chainlink", "mpc", "silence-labs", "web3"]
+    },
+    {
+      "name": "arjun-feedback",
+      "purpose": "Feedback collection tool",
+      "category": "client",
+      "created": "2025-12-23",
+      "lastUpdated": "2025-12-23",
+      "url": "https://arjun-feedback.vercel.app",
+      "tags": ["feedback", "arjun"]
+    },
+    {
+      "name": "vercel-jsx-test",
+      "purpose": "JSX rendering test project",
+      "category": "experiment",
+      "created": "2025-12-23",
+      "lastUpdated": "2025-12-23",
+      "url": "https://vercel-jsx-test.vercel.app",
+      "tags": ["test", "jsx"]
+    },
+    {
+      "name": "docs",
+      "purpose": "Documentation site",
+      "category": "internal",
+      "created": "2025-12-20",
+      "lastUpdated": "2025-12-20",
+      "url": "https://docs-rosy-iota.vercel.app",
+      "tags": ["documentation"]
+    },
+    {
+      "name": "silent-orchestration",
+      "purpose": "Silence Labs orchestration project",
+      "category": "research",
+      "created": "2025-12-18",
+      "lastUpdated": "2025-12-18",
+      "url": "https://silent-orchestration.vercel.app",
+      "tags": ["silence-labs", "orchestration"]
+    },
+    {
+      "name": "v0-ap-statistics-study-tool",
+      "purpose": "AP Statistics study tool for test preparation",
+      "category": "client",
+      "created": "2025-12-17",
+      "lastUpdated": "2025-12-17",
+      "url": "https://v0-ap-statistics-study-tool.vercel.app",
+      "tags": ["education", "ap-statistics", "arjun", "study-tool"]
+    },
+    {
+      "name": "v0-ap-biology-heredity-practice",
+      "purpose": "AP Biology heredity practice questions",
+      "category": "client",
+      "created": "2025-12-12",
+      "lastUpdated": "2025-12-12",
+      "url": "https://v0-ap-biology-heredity-practice.vercel.app",
+      "tags": ["education", "ap-biology", "arjun", "study-tool"]
+    },
+    {
+      "name": "v0-prospect-scoring-application",
+      "purpose": "Lead/prospect scoring application",
+      "category": "internal",
+      "created": "2025-12-12",
+      "lastUpdated": "2025-12-12",
+      "url": "https://v0-prospect-scoring-application.vercel.app",
+      "tags": ["sales", "scoring", "leads"]
+    },
+    {
+      "name": "v0-ap-biology-study-site",
+      "purpose": "AP Biology comprehensive study site",
+      "category": "client",
+      "created": "2025-12-11",
+      "lastUpdated": "2025-12-11",
+      "url": "https://v0-ap-biology-study-site.vercel.app",
+      "tags": ["education", "ap-biology", "arjun", "study-tool"]
+    },
+    {
+      "name": "v0-open-ai-you-tube-organizer",
+      "purpose": "YouTube content organizer using OpenAI",
+      "category": "experiment",
+      "created": "2025-12-08",
+      "lastUpdated": "2025-12-08",
+      "url": null,
+      "tags": ["openai", "youtube", "prototype"]
+    },
+    {
+      "name": "v0-html-layout-adjustments",
+      "purpose": "HTML layout adjustment experiments",
+      "category": "experiment",
+      "created": "2025-12-07",
+      "lastUpdated": "2025-12-07",
+      "url": null,
+      "tags": ["html", "layout", "prototype"]
+    },
+    {
+      "name": "v0-job-search-portal",
+      "purpose": "Job search portal prototype",
+      "category": "experiment",
+      "created": "2025-09-17",
+      "lastUpdated": "2025-09-17",
+      "url": null,
+      "tags": ["jobs", "portal", "prototype"]
+    },
+    {
+      "name": "v0-speech-to-text-app",
+      "purpose": "Speech to text application",
+      "category": "experiment",
+      "created": "2025-09-16",
+      "lastUpdated": "2025-09-16",
+      "url": null,
+      "tags": ["speech", "transcription", "prototype"]
     }
   ],
   "categories": ["research", "client", "internal", "experiment"]
