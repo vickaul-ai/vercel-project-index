@@ -82,15 +82,6 @@
       "tags": ["sales", "scoring", "leads"]
     },
     {
-      "name": "v0-ap-biology-study-site",
-      "purpose": "AP Biology comprehensive study site",
-      "category": "client",
-      "created": "2025-12-11",
-      "lastUpdated": "2025-12-11",
-      "url": "https://v0-ap-biology-study-site.vercel.app",
-      "tags": ["education", "ap-biology", "arjun", "study-tool"]
-    },
-    {
       "name": "v0-open-ai-you-tube-organizer",
       "purpose": "YouTube content organizer using OpenAI",
       "category": "experiment",
