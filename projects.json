@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "name": "maya-interview-prep",
+      "title": "Interview Prep Guide",
+      "purpose": "Web app for navigating Teachers College faculty interview preparation",
+      "category": "research",
+      "created": "2025-12-26",
+      "lastUpdated": "2025-12-26",
+      "url": "https://maya-interview-prep.vercel.app",
+      "tags": [
+        "interview",
+        "faculty",
+        "teachers-college",
+        "columbia"
+      ]
+    },
+    {
       "name": "vercel-project-index",
       "title": "Vercel Project Index",
       "purpose": "Dashboard tracking all Vercel-deployed projects",
