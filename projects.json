@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "name": "ausjobtracker",
+      "title": "AusJobTracker",
+      "purpose": "Automated job search and application tracking for computational biology positions in Australia",
+      "category": "personal",
+      "created": "2025-12-29",
+      "lastUpdated": "2025-12-29",
+      "url": "https://ausjobtracker.vercel.app",
+      "tags": [
+        "job-tracker",
+        "automation",
+        "bioinformatics",
+        "australia"
+      ]
+    },
+    {
       "name": "maya-interview-prep",
       "title": "Interview Prep Guide",
       "purpose": "Web app for navigating Teachers College faculty interview preparation",
@@ -154,6 +169,7 @@
     }
   ],
   "categories": [
+    "personal",
     "research",
     "client",
     "internal",
