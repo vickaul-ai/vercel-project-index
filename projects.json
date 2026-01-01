@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "name": "gmail-manager",
+      "title": "Gmail Manager",
+      "purpose": "Natural language Gmail management - manage inbox with plain English commands",
+      "category": "internal",
+      "created": "2026-01-01",
+      "lastUpdated": "2026-01-01",
+      "url": "https://gmail-manager-eight.vercel.app",
+      "tags": [
+        "gmail",
+        "ai",
+        "n8n",
+        "nextjs"
+      ]
+    },
+    {
       "name": "ausjobtracker",
       "title": "AusJobTracker",
       "purpose": "Automated job search and application tracking for computational biology positions in Australia",
