@@ -1,6 +1,22 @@
 {
   "projects": [
     {
+      "name": "medical-results-review",
+      "title": "Medical Results Review",
+      "purpose": "Family medical results tracking with AI-powered document extraction and analysis",
+      "category": "personal",
+      "created": "2026-01-03",
+      "lastUpdated": "2026-01-03",
+      "url": "https://medical-results-review.vercel.app",
+      "tags": [
+        "medical",
+        "health",
+        "ai",
+        "nextjs",
+        "family"
+      ]
+    },
+    {
       "name": "gmail-manager",
       "title": "Gmail Manager",
       "purpose": "Natural language Gmail management - manage inbox with plain English commands",
